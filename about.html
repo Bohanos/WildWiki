@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildWiki — About</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>if (localStorage.getItem('wildwiki-theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');</script>
+</head>
+<body>
+
+    <!-- SHARED NAVIGATION -->
+    <header class="navbar">
+        <a href="index.html" class="navbar__brand">🌿 WildWiki</a>
+        <input type="checkbox" id="nav-checkbox">
+        <nav class="navbar__nav">
+            <a href="index.html" class="navbar__link">Home</a>
+            <a href="about.html" class="navbar__link is-active">About</a>
+            <a href="funfacts.html" class="navbar__link">Field Notes</a>
+        </nav>
+        <div class="navbar__actions">
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                <span class="theme-toggle__icon">🌙</span>
+            </button>
+            <label for="nav-checkbox" class="nav-toggle-label">
+                <span></span><span></span><span></span>
+            </label>
+        </div>
+    </header>
+
+    <main style="max-width: 800px; margin: 4rem auto; padding: 0 5%; min-height: 50vh;">
+        <p class="eyebrow">PROJECT ORIGINS</p>
+        <h1 class="hero__title" style="margin-bottom: 2rem;">About WildWiki</h1>
+        
+        <article style="font-size: 1.1rem; color: var(--color-ink-soft);">
+            <p style="margin-bottom: 1.5rem;">WildWiki started as a mini-wiki project focused on wildlife preservation and education. By combining clean structure with modern design, we aim to showcase the beauty of the animal kingdom.</p>
+            
+            <h2 class="topic-title" style="margin-top: 3rem; font-size: 1.5rem;">Why Just HTML & CSS?</h2>
+            <p>This version of the project strips away complex logic to focus on the fundamentals of web development. Everything you see here—from the mobile menu to the image carousels—is built natively without JavaScript (save for a simple dark mode toggle!).</p>
+        </article>
+    </main>
+
+    <!-- SHARED FOOTER -->
+    <footer class="footer">
+        <div class="footer__brand">Jenga Tech</div>
+        <p>Built by <strong>Class C</strong></p>
+        <p class="tag-mono">Powered by pure HTML &amp; CSS</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

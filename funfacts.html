@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildWiki — Field Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>if (localStorage.getItem('wildwiki-theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');</script>
+</head>
+<body>
+
+    <!-- SHARED NAVIGATION -->
+    <header class="navbar">
+        <a href="index.html" class="navbar__brand">🌿 WildWiki</a>
+        <input type="checkbox" id="nav-checkbox">
+        <nav class="navbar__nav">
+            <a href="index.html" class="navbar__link">Home</a>
+            <a href="about.html" class="navbar__link">About</a>
+            <a href="funfacts.html" class="navbar__link is-active">Field Notes</a>
+        </nav>
+        <div class="navbar__actions">
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                <span class="theme-toggle__icon">🌙</span>
+            </button>
+            <label for="nav-checkbox" class="nav-toggle-label">
+                <span></span><span></span><span></span>
+            </label>
+        </div>
+    </header>
+
+    <main style="max-width: var(--max-width); margin: 4rem auto; padding: 0 5%; min-height: 50vh;">
+        <p class="eyebrow">QUICK TRIVIA</p>
+        <h1 class="hero__title" style="margin-bottom: 3rem;">Field Notes</h1>
+        
+        <div class="flip-grid">
+            <!-- Pure CSS Flip Card 1 -->
+            <div class="flip-card" tabindex="0">
+                <div class="flip-card__inner">
+                    <div class="flip-card__front">
+                        <span style="font-size: 2.5rem; margin-bottom: 0.5rem;">🐼</span>
+                        <h3>Giant Panda</h3>
+                        <p class="scientific-name">Hover or click!</p>
+                    </div>
+                    <div class="flip-card__back">
+                        <p>Giant pandas spend 10 to 16 hours a day foraging and eating bamboo!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pure CSS Flip Card 2 -->
+            <div class="flip-card" tabindex="0">
+                <div class="flip-card__inner">
+                    <div class="flip-card__front">
+                        <span style="font-size: 2.5rem; margin-bottom: 0.5rem;">🐋</span>
+                        <h3>Blue Whale</h3>
+                        <p class="scientific-name">Hover or click!</p>
+                    </div>
+                    <div class="flip-card__back">
+                        <p>A blue whale's tongue can weigh as much as an elephant.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pure CSS Flip Card 3 -->
+            <div class="flip-card" tabindex="0">
+                <div class="flip-card__inner">
+                    <div class="flip-card__front">
+                        <span style="font-size: 2.5rem; margin-bottom: 0.5rem;">🦅</span>
+                        <h3>Bald Eagle</h3>
+                        <p class="scientific-name">Hover or click!</p>
+                    </div>
+                    <div class="flip-card__back">
+                        <p>They can reach speeds up to 100 mph when diving for prey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- SHARED FOOTER -->
+    <footer class="footer">
+        <p>Built by <strong>Your Name/Class</strong></p>
+        <p>Powered by pure HTML & CSS</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

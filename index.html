@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildWiki — A Field Guide to the Animal Kingdom</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        if (localStorage.getItem('wildwiki-theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    </script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="index.html" class="navbar__brand">🌿 WildWiki</a>
+
+        <input type="checkbox" id="nav-checkbox">
+
+        <nav class="navbar__nav">
+            <a href="index.html" class="navbar__link is-active">Home</a>
+            <a href="about.html" class="navbar__link">About</a>
+            <a href="funfacts.html" class="navbar__link">Field Notes</a>
+        </nav>
+
+        <div class="navbar__actions">
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                <span class="theme-toggle__icon">🌙</span>
+            </button>
+            <label for="nav-checkbox" class="nav-toggle-label">
+                <span></span><span></span><span></span>
+            </label>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero__text">
+            <p class="eyebrow">SPECIMEN ARCHIVE / EST. THIS SEMESTER</p>
+            <h1 class="hero__title">A field guide to the <em>animal kingdom</em>, built one specimen at a time.</h1>
+            <p class="hero__subtitle">
+                Browse mammals, birds, reptiles, ocean life, insects, and endangered species — all catalogued right here on one page. Click a category in the sidebar to jump straight to it.
+            </p>
+            <div class="hero__cta-row">
+                <a href="#mammals" class="btn btn--primary">Start Exploring ↓</a>
+                <a href="about.html" class="btn btn--ghost">About this guide</a>
+            </div>
+        </div>
+
+        <!-- Pure CSS Scroll-Snap Carousel -->
+        <div class="carousel">
+            <div class="carousel__track">
+                <figure class="carousel__slide">
+                    <img src="./assets/images/Panthera Leo.jpg" alt="African Lion">
+                    <figcaption><span class="tag-mono">No. 001</span> African Lion — <em>Panthera leo</em></figcaption>
+                </figure>
+                <figure class="carousel__slide">
+                    <img src="./assets/images/Emperor Penguin.jpg" alt="Emperor Penguin">
+                    <figcaption><span class="tag-mono">No. 005</span> Emperor Penguin — <em>Aptenodytes forsteri</em></figcaption>
+                </figure>
+                <figure class="carousel__slide">
+                    <img src="./assets/images/Blue Whale.jpg" alt="Blue Whale">
+                    <figcaption><span class="tag-mono">No. 010</span> Blue Whale — <em>Balaenoptera musculus</em></figcaption>
+                </figure>
+                <figure class="carousel__slide">
+                    <img src="./assets/images/Giant Panda.jpg" alt="Giant Panda">
+                    <figcaption><span class="tag-mono">No. 016</span> Giant Panda — <em>Ailuropoda melanoleuca</em></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN LAYOUT -->
+    <div class="layout">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <p class="sidebar__label">Catalog</p>
+            <ul class="sidebar__list">
+                <li><a href="#mammals" class="sidebar-link">🦁 Mammals</a></li>
+                <li><a href="#birds" class="sidebar-link">🦅 Birds</a></li>
+                <li><a href="#reptiles" class="sidebar-link">🦎 Reptiles</a></li>
+                <li><a href="#ocean" class="sidebar-link">🐋 Ocean Life</a></li>
+                <li><a href="#insects" class="sidebar-link">🦋 Insects</a></li>
+                <li><a href="#endangered" class="sidebar-link">🚨 Endangered</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Stream -->
+        <main class="content">
+
+            <!-- MAMMALS -->
+            <section id="mammals" class="topic-section">
+                <h2 class="topic-title">Mammals</h2>
+                <p class="topic-intro">Warm-blooded, mostly furry, and famously good at raising their young.</p>
+                <div class="card-grid">
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 001</span>
+                        <img src="./assets/images/Lion.jpg" alt="African Lion">
+                        <h3>African Lion</h3>
+                        <p class="scientific-name">Panthera leo</p>
+                        <p>The only cat that lives in social groups called prides. A male's roar can be heard up to 8 km away.</p>
+                    </article>
+
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 002</span>
+                        <img src="./assets/images/Elephant.jpg" alt="African Elephant">
+                        <h3>African Elephant</h3>
+                        <p class="scientific-name">Loxodonta africana</p>
+                        <p>The largest land animal alive today. Elephants can recognize themselves in a mirror — a rare sign of self-awareness.</p>
+                    </article>
+
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 003</span>
+                        <img src="./assets/images/Grey Wolf.jpg" alt="Grey Wolf">
+                        <h3>Grey Wolf</h3>
+                        <p class="scientific-name">Canis lupus</p>
+                        <p>Wolves live in tight-knit packs led by a breeding pair, and can travel over 30 km in a single day hunting.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- BIRDS -->
+            <section id="birds" class="topic-section">
+                <h2 class="topic-title">Birds</h2>
+                <p class="topic-intro">Feathered, mostly airborne, and the closest living relatives of dinosaurs.</p>
+                <div class="card-grid">
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 004</span>
+                        <img src="./assets/images/Bald Eagle.jpg" alt="Bald Eagle">
+                        <h3>Bald Eagle</h3>
+                        <p class="scientific-name">Haliaeetus leucocephalus</p>
+                        <p>The national bird of the USA has eyesight roughly four to five times sharper than a human's.</p>
+                    </article>
+
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 005</span>
+                        <img src="./assets/images/Emperor Penguin.jpg" alt="Emperor Penguin">
+                        <h3>Emperor Penguin</h3>
+                        <p class="scientific-name">Aptenodytes forsteri</p>
+                        <p>The tallest penguin species. Fathers keep eggs warm on their feet for around 65 days through Antarctic winter.</p>
+                    </article>
+
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 006</span>
+                        <img src="./assets/images/Indian Peafowl.jpg" alt="Indian Peafowl">
+                        <h3>Indian Peafowl</h3>
+                        <p class="scientific-name">Pavo cristatus</p>
+                        <p>Only males — peacocks — grow the iconic tail. It's fanned open mainly to impress potential mates.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- REPTILES -->
+            <section id="reptiles" class="topic-section">
+                <h2 class="topic-title">Reptiles</h2>
+                <p class="topic-intro">Scaly, cold-blooded, and often older evolutionary lineages than you'd expect.</p>
+                <div class="card-grid">
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 007</span>
+                        <img src="./assets/images/Komodo Dragon.jpg" alt="Komodo Dragon">
+                        <h3>Komodo Dragon</h3>
+                        <p class="scientific-name">Varanus komodoensis</p>
+                        <p>The largest living lizard, found on just a few Indonesian islands, capable of taking down prey far bigger than itself.</p>
+                    </article>
+
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 008</span>
+                        <img src="./assets/images/Sea Turtle.jpg" alt="Green Sea Turtle">
+                        <h3>Sea Turtle</h3>
+                        <p class="scientific-name">Chelonia mydas</p>
+                        <p>Females return to the very beach they hatched on, sometimes decades later, to lay their own eggs.</p>
+                    </article>
+
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 009</span>
+                        <img src="./assets/images/Chameleon.jpg" alt="Chameleon">
+                        <h3>Chameleon</h3>
+                        <p class="scientific-name">Chamaeleonidae</p>
+                        <p>Their eyes can rotate independently of each other, giving them a nearly 360° view without moving their head.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- OCEAN LIFE -->
+            <section id="ocean" class="topic-section">
+                <h2 class="topic-title">Ocean Life</h2>
+                <p class="topic-intro">Over 70% of Earth is ocean, and most of it is still unmapped territory for these species.</p>
+                <div class="card-grid">
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 010</span>
+                        <img src="./assets/images/Blue Whale.jpg" alt="Blue Whale">
+                        <h3>Blue Whale</h3>
+                        <p class="scientific-name">Balaenoptera musculus</p>
+                        <p>The largest animal to have ever existed on Earth — even bigger than the largest known dinosaurs.</p>
+                    </article>
+
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 011</span>
+                        <img src="./assets/images/Clown Fish.jpg" alt="Clownfish">
+                        <h3>Clownfish</h3>
+                        <p class="scientific-name">Amphiprioninae</p>
+                        <p>Immune to the sting of the sea anemones they live in, giving them a safe home few other fish can enter.</p>
+                    </article>
+
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 012</span>
+                        <img src="./assets/images/Octopus.jpg" alt="Octopus">
+                        <h3>Octopus</h3>
+                        <p class="scientific-name">Octopoda</p>
+                        <p>Has three hearts and blue blood, and can squeeze its entire boneless body through openings the size of a coin.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- INSECTS -->
+            <section id="insects" class="topic-section">
+                <h2 class="topic-title">Insects</h2>
+                <p class="topic-intro">Small in size, enormous in impact — insects pollinate most of the plants we eat.</p>
+                <div class="card-grid">
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 013</span>
+                        <img src="./assets/images/Monarch Butterfly.jpg" alt="Monarch Butterfly">
+                        <h3>Monarch Butterfly</h3>
+                        <p class="scientific-name">Danaus plexippus</p>
+                        <p>Migrates up to 4,800 km between North America and Mexico — a journey no single butterfly completes alone.</p>
+                    </article>
+
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 014</span>
+                        <img src="./assets/images/Honey Bee.jpg" alt="Honeybee">
+                        <h3>Honeybee</h3>
+                        <p class="scientific-name">Apis mellifera</p>
+                        <p>Communicates the location of food to the rest of the hive through a "waggle dance."</p>
+                    </article>
+
+                    <article class="specimen-card">
+                        <span class="specimen-card__number">No. 015</span>
+                        <img src="./assets/images/Lady Bug.jpg" alt="Ladybug">
+                        <h3>Ladybug</h3>
+                        <p class="scientific-name">Coccinellidae</p>
+                        <p>A single ladybug can eat over 5,000 aphids in its lifetime, making it a farmer's best friend.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ENDANGERED SPECIES -->
+            <section id="endangered" class="topic-section">
+                <h2 class="topic-title">Endangered Species</h2>
+                <p class="topic-intro">These animals need our attention most. Play clips directly inside each specimen card.</p>
+                <div class="card-grid">
+                    <article class="specimen-card video-card">
+                        <span class="specimen-card__number">No. 016</span>
+                        <video controls poster="https://placehold.co/800x450/16241C/E9C46A?text=Giant+Panda">
+                            <source src="./assets/videos/Giant_Panda.mp4" type="video/mp4">
+                        </video>
+                        <h3>Giant Panda</h3>
+                        <p class="scientific-name">Ailuropoda melanoleuca</p>
+                        <p>Eats almost nothing but bamboo — up to 14 hours a day — despite having the digestive system of a carnivore.</p>
+                    </article>
+
+                    <article class="specimen-card video-card">
+                        <span class="specimen-card__number">No. 017</span>
+                        <video controls poster="https://placehold.co/800x450/16241C/E9C46A?text=Sumatran+Tiger">
+                            <source src="./assets/videos/Sumatran_Tiger.mp4" type="video/mp4">
+                        </video>
+                        <h3>Sumatran Tiger</h3>
+                        <p class="scientific-name">Panthera tigris sumatrae</p>
+                        <p>Fewer than 700 are believed to remain in the wild, found only on the Indonesian island of Sumatra.</p>
+                    </article>
+
+                    <article class="specimen-card video-card">
+                        <span class="specimen-card__number">No. 018</span>
+                        <video controls poster="https://placehold.co/800x450/16241C/E9C46A?text=Black+Rhino">
+                            <source src="./assets/videos/Black_Rhino.mp4" type="video/mp4">
+                        </video>
+                        <h3>Black Rhino</h3>
+                        <p class="scientific-name">Diceros bicornis</p>
+                        <p>Poaching for its horn has driven this species to the brink; conservation programs are slowly rebuilding numbers.</p>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__brand">
+            🌿 WildWiki
+            <p>A student-built field guide to the animal kingdom.</p>
+        </div>
+        <div class="footer__links">
+            <p class="footer__heading">Explore</p>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="funfacts.html">Field Notes</a>
+        </div>
+        <div class="footer__note">
+            <p class="footer__heading">Credits</p>
+            <p>Images are placeholders. Built with pure HTML &amp; CSS.</p>
+        </div>
+        <p class="footer__copyright">Built by <strong>Your Name/Class</strong> — Powered by HTML & CSS</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
